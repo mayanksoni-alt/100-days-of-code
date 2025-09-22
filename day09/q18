@@ -1,0 +1,26 @@
+#include <stdio.h>
+int main() {
+  int grades;
+  int whilecountinue = 1;
+  while (whilecountinue == 1){
+     printf("Enter your grades: ");
+     scanf("%d", &grades);
+       if (grades >= 90){
+       printf("you got an A\n");
+       } 
+    else if (grades >= 80){
+      printf("you got an B\n");
+    } 
+    else if (grades >= 70) {
+      printf("you got an c\n");
+    }
+    else if (grades >= 60){
+      printf("you got an D\n");
+    } else {
+      printf("you got an F\n");
+    }
+  printf("do you want to continue the program? (1/0):\n");
+  }
+printf("end the  program");
+return 0;
+}
