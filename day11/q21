@@ -1,0 +1,57 @@
+#include <stdio.h>
+int main(){
+
+  int num;
+  int whilecontinue = 1;
+  while(whilecontinue == 1){
+  printf("Enter a number b/w 1-12:");
+  scanf("%d", &num);
+
+  switch(num) {
+     case 1:
+       printf("January\n31 days\n");
+       break;
+     case 2:
+       printf("February\n28 days\n");
+       break;  
+     case 3:
+       printf("March\n31 days\n");
+       break; 
+    case 4:
+       printf("April\n30 days\n");
+       break;
+    case 5:
+       printf("May\n31 days\n");
+       break;
+    case 6:
+       printf("June\n30 days\n");
+       break;
+    case 7:
+       printf("July\n31 days\n");
+       break;
+    case 8:
+       printf("August\n31 days\n");
+       break;
+    case 9:
+       printf("September\n30 days\n");
+       break;
+    case 10:
+       printf("October\n31 days\n");
+       break;
+    case 11:
+       printf("November\n30 days\n");
+       break;
+    case 12:
+       printf("December\n31 days\n");
+       break;
+    default:
+       printf("Invalid input! Please enter a number between 1-12.\n");
+       break;
+  }
+    printf("Dpyou want to continue? (1/0):");
+    scanf("%d", &whilecontinue);
+  }
+  printf("Thank you for using the program!\n");
+  
+  return 0;
+}

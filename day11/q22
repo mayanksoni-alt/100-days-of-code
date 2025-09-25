@@ -1,0 +1,24 @@
+#include <stdio.h>
+int main(){
+   float cp, sp;
+  int whilecontinue = 1;
+  while(whilecontinue == 1){
+   printf("Enter the cost price: ");
+   scanf("%f", &cp);
+
+   printf("Enter the selling price: ");
+   scanf("%f", &sp);
+
+  if(sp > cp){
+    printf("your profit is %.2f \n", (sp - cp));
+  }else if(cp > sp) {
+    printf("oops you have a loss of %.2f \n", (cp - sp));
+  } else {
+    printf("no profit no loss\n");
+  }
+    printf("Do you want to continue? (1/0)");
+    scanf("%d", &whilecontinue);
+  }
+    printf("Thank you for using our program");
+    return 0;
+}
