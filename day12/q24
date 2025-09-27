@@ -1,0 +1,27 @@
+#include <stdio.h>
+int main() {
+  int units;
+  int bill = 0;
+  int whilecontinue = 1;
+  while(whilecontinue == 1){
+    printf("Enter the units:");
+    scanf("%d",&units);
+
+    if (units <= 100){
+      bill = 5*units;
+      printf("your bill is: %d\n", bill);
+    } else if  (units > 100 && units <= 200) {
+      bill = 500 + 7*(units-100);
+      printf(" your bill is: %d\n", bill);
+    } else if (units > 200 && units <= 300) {
+      bill = 500 + 700 + 10*(units-200);
+      printf("your bill is: %d\n", bill);
+    } else { bill = 500 + 700 + 1000 + 15*(units-300);
+            printf("your bill is: %d\n", bill);
+    }
+    printf("Do you want to continue? (1/0):");
+    scanf("%d",&whilecontinue);
+  }
+  printf("Thank you for using the program\n");
+  return 0;
+  } 

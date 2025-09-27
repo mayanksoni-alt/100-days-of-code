@@ -1,0 +1,27 @@
+nclude <stdio.h>
+int main() {
+  int days;
+  int fine = 0;
+  int whilecontinue = 1;
+  while(whilecontinue == 1){
+    printf("Enter the days:");
+    scanf("%d",&days);
+
+    if (days <= 5){
+      fine = 4*days;
+      printf("The value of fine is: %d\n", fine);
+    } else if  (days > 5 && days <= 10) {
+      fine = 10 + 4*(days-5);
+      printf("The value of fine is: %d\n", fine);
+    } else if (days > 10 && days <= 30) {
+      fine = 10 + 20 + 6*(days-10);
+      printf("The value of fine is: %d\n", fine);
+    } else {
+      printf("Your membership is cancelled\n");
+    }
+    printf("Do you want to continue? (1/0):");
+    scanf("%d",&whilecontinue);
+  }
+  printf("Thank you for using the program\n");
+  return 0;
+  } 
